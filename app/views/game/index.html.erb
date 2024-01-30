@@ -1,0 +1,20 @@
+<!-- app/views/games/index.html.erb -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <h1>Tic Tac Toe</h1>
+      <% if @winner %>
+        <p>Game Over! <%= @winner %> wins!</p>
+      <% else %>
+        <input type="hidden" id="current-player" value="<%= @current_player %>">
+        <p>Current Turn: <%= @current_player %></p>
+        <div id="board" class="board">
+          <% @game_board.each_with_index do |cell, index| %>
+            <div class="cell" data-index="<%= index %>"><%= cell %></div>
+          <% end %>
+        </div>
+        <button id="resetButton" class="btn btn-primary mt-2">Reset Game</button>
+      <% end %>
+    </div>
+  </div>
+</div>
