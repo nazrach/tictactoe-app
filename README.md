@@ -28,13 +28,16 @@ Make sure you have the following installed:
 1. Clone the repository:
 
   ```bash
-  git clone https://github.com/your-username/tic-tac-toe-api.git
-  cd tic-tac-toe-api
+  git clone https://github.com/nazrach/tictactoe-app.git
+  cd tictactoe-app
   bundle install
+  yarn install
+  bin/dev
 
 ## Usage
 
 ### Endpoints
+  open URL
   http://localhost:3000/
 
 ## Testing
